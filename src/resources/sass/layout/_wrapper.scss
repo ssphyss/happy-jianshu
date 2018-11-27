@@ -1,0 +1,28 @@
+/* ====================
+// wrapper
+// ==================== */
+
+///*==========================================
+// |--top               z-index: 100;
+// |--wrapper
+// 	  |--container
+//		 |--sidebar
+//		 |--content
+//============================================ *//
+.top {
+    .container {
+        width: 1170px;
+        height: 58px;
+    }
+}
+
+.wrapper {
+    position: relative;
+}    
+.container {
+    position: relative;
+    padding: 0 3rem;
+    margin: 0 auto;
+    min-width: 980px;
+    // border: 1px solid;
+}
