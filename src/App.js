@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import Top from './components/LayoutComponents/Top';
+import { Provider } from 'react-redux';
+import store from './store';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Top />
-      </div>
+		<Provider store={store}>
+			<Top />
+		</Provider>
     );
   }
 }

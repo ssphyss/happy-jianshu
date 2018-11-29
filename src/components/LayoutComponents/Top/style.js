@@ -27,7 +27,7 @@ export const Container = styled.div`
     margin: 0 auto;
     width: calc(100% - 320px);
     height: inherit;    
-    border: 1px solid #222;    
+    /* border: 1px solid #222;     */
     @media screen and (max-width:880px) {
         width: calc(100% - 205px);
     }
@@ -95,7 +95,9 @@ export const Top__Search = styled.span`
     &.focused {
         width: 260px;
         input {
-            background-color: #ccc
+            background-color: #ccc;
+            background-color: #ea6f5a;
+            background-color: rgba(234, 111, 90, 0.2);
         }
 
         .btn-search {
@@ -134,12 +136,57 @@ export const SearchInput = styled.input.attrs({
     }
 `;
 
+
+
+export const SearchInfo = styled.div`    
+    position: absolute;
+    top: 100%;
+    width: 240px;
+    border: 1px solid #e6e6e6;
+    margin-top: 10px;
+    padding: 10px 12px;
+
+`;
+export const SearchInfoTitle = styled.div`
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    i {
+        display: inline-block;  // 寫才會旋轉
+        padding: 0px 5px;
+        color: ${primary}; 
+    }    
+    .iconfont {
+		// transform: translateY(-50%);
+		transition: all .2s ease-in;
+		transform: rotate(0deg);
+		tarnsform-origin: center center;
+	}
+    span {
+        display: inline-block;
+
+    }
+    button {
+        display: inline-block;
+        border: none;
+        background-color: #fff;
+    }
+`;
+export const SearchInfoItem = styled.a`    
+    display: inline-block;
+    border: 1px solid #cecece;
+    margin: 4px 5px 4px 0;
+    border-radius: 2px;
+    padding: 1px 5px;
+    font-size: .5rem;
+`;
+
 export const Top__User = styled.div`
     position: absolute;
     right: 0;
     top: 0;
     /* width: 200px; */
-    background-color: yellow;
+    /* background-color: yellow; */
 `;
 
 export const Button = styled.div`
