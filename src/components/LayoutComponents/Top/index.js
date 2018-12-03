@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { actionCreators } from './store';
 import { Wrapper__Top, Container, Top__Logo, Top__Nav, NavItem, Top__Search, SearchInput, Top__User, Button, SearchInfo, SearchInfoTitle, SearchInfoItem } from './style'
 import { CSSTransition } from 'react-transition-group';
+import { Link } from 'react-router-dom';
 import './index.scss';
 
 class Top extends React.Component{
@@ -79,7 +80,9 @@ class Top extends React.Component{
         }
         return(           
             <Wrapper__Top>
-                <Top__Logo />
+                <Link to='/'>
+                    <Top__Logo />
+                </Link>
                 <Container>                    
                     <Top__Nav className='left'>
                         <NavItem className='active'><i className="iconfont iconfont--hide">&#xe71b;</i>首頁</NavItem>

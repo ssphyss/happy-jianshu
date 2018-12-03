@@ -12,8 +12,13 @@
 // 引用redux-immutable
 import { combineReducers } from  'redux-immutable';
 import { reducer as topReducer } from './../components/LayoutComponents/Top/store';
+import { reducer as homeReducer } from './../components/JianshuComponents/Home/store';
+import { reducer as detailArticleReducer } from './../components/JianshuComponents/DetailArticle/store';
+
 const reducer = combineReducers({
-    top: topReducer
+    top: topReducer,
+    home: homeReducer,
+    detailArticle: detailArticleReducer
 })
 
 export default reducer;

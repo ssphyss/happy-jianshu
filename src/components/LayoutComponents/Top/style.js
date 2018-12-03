@@ -10,6 +10,7 @@ export const Wrapper__Top = styled.div`
     width: 100%;
     height: 56px;
     border-bottom: 1px solid #f0f0f0;
+    z-index: 99999;
 `;
 // Logo
 export const Top__Logo = styled.div`
@@ -145,7 +146,7 @@ export const SearchInfo = styled.div`
     border: 1px solid #e6e6e6;
     margin-top: 10px;
     padding: 10px 12px;
-
+    background: #fff;
 `;
 export const SearchInfoTitle = styled.div`
     display: flex;

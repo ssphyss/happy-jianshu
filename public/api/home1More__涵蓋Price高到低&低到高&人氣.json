@@ -1,0 +1,21 @@
+{
+	"code": "0",
+	"msg": "後端傳的錯誤訊息",
+	"result":{
+		"totalItems": 47,
+        "homeArticle": [
+            {
+                "id": 7,
+                "title": "日更練字",
+                "desc": "日更練字人說萬事開頭難，其實不然。練字半年，越看越不順眼。我倒是想說，凡事要趁早，特別是學習這事。",
+                "imgUrl": "./../images/homeArticle/01.jpg"
+            },
+            {
+                "id": 8,
+                "title": "微小說（應聘）",
+                "desc": "某公司經理招一名司機。應聘者3人，副總說“明天8點來公司，張總要見見你們。",
+                "imgUrl": "./../images/homeArticle/02.jpg"
+            }
+        ]
+	}	
+}
